@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <title>Ticmas | CV</title>
+  </head>
+  <body>
+    <header>
+      <img id="photoUser" alt="photo-user" />
+      <ul class="links__container">
+        <li>
+          <a href="/"><i class="fas fa-home"></i> HOME</a>
+        </li>
+        <li>
+          <a href="#reference"><i class="fas fa-users"></i> REFERENCIAS</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fas fa-envelope"></i> CONTACTO</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <h1 id="nameUser"></h1>
+      <div class="main__container">
+        <div class="info__container">
+          <h2>Información personal</h2>
+          <ul>
+            <li>Teléfono: <span id="phoneUser"></span></li>
+            <li>Email: <span id="emailUser"></span></li>
+            <li>Dirección: <span id="locationUser"></span></li>
+          </ul>
+        </div>
+        <div class="skills__container">
+          <h2>Habilidades</h2>
+          <div class="logos__container">
+            <div>
+              <img alt="git" src="./images/git.png" />
+            </div>
+            <div>
+              <img alt="html" src="./images/html-5.png" />
+            </div>
+            <div>
+              <img alt="css" src="./images/css-3.png" />
+            </div>
+            <div>
+              <img alt="bootstrap" src="./images/bootstrap.png" />
+            </div>
+            <div>
+              <img alt="js" src="./images/js.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reference__container" id="reference">
+        <h2 class="reference__title">Referencias</h2>
+        <div class="references__container">
+          <div>
+            <img id="reference1" alt="photo-reference1" />
+            <h3 id="nameReference1"></h3>
+            <p>
+              "Capaz de seguir las instrucciones del entrenador y adaptarse a
+              nuevas rutinas de entrenamiento."
+            </p>
+          </div>
+          <div>
+            <img id="reference2" alt="photo-reference2" />
+            <h3 id="nameReference2"></h3>
+            <p>
+              "Con un compromiso total para participar y desarrollar un proyecto
+              en equipo."
+            </p>
+          </div>
+          <div>
+            <img id="reference3" alt="photo-reference3" />
+            <h3 id="nameReference3"></h3>
+            <p>"Responsabilidad y puntualidad en los horarios de trabajo."</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact__container" id="contact">
+        <h2 class="contact__title">Contacto</h2>
+        <form class="contact__form" autocomplete="off" id="formulario">
+          <div>
+            <input
+              class="input__form"
+              type="text"
+              placeholder="Nombre y apellido"
+              required
+              name="nombre"
+              id="nombre"
+            />
+          </div>
+          <div>
+            <input
+              class="input__form"
+              type="email"
+              placeholder="Email"
+              required
+              name="email"
+              id="email"
+            />
+          </div>
+          <div>
+            <input
+              class="input__form"
+              type="text"
+              placeholder="Celular"
+              name="telefono"
+              id="telefono"
+            />
+          </div>
+          <div>
+            <textarea
+              class="textarea__form"
+              placeholder="Escriba su mensaje"
+              name="mensaje"
+              id="mensaje"
+            ></textarea>
+          </div>
+          <button class="btn__form" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3 class="social__title">Redes sociales</h3>
+        <div class="social__container">
+          <a target="_blank" href="https://www.facebook.com"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a target="_blank" href="https://www.twitter.com"
+            ><i class="fab fa-twitter-square twitter"></i
+          ></a>
+          <a target="_blank" href="https://www.instagram.com"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+          <a target="_blank" href="https://www.linkedin.com"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://www.github.com"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/67351b196b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
